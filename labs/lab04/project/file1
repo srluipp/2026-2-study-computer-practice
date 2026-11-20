@@ -1,0 +1,8 @@
+f(x) = (3x.^2 + 6x .- 9).*exp.(-0.3x)
+x = collect(range(-5,10,length=151))
+y = f(x)
+gr()
+plot(x,y,
+title="A simple curve",
+xlabel="Variable x",ylabel="Variable y",
+color="blue")
